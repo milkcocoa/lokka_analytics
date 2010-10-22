@@ -2,7 +2,7 @@ module Lokka
   module Helpers
     def google_analytics(uid)
       haml(<<-script, {})
-%script{ :type => "text/javascript" }
+:javascript
   :cdata
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '#{uid}']);
